@@ -15,7 +15,7 @@ public class Main {
                 long startTime=System.currentTimeMillis();
                 double [] readIntensity=Utilities.importFromAFile(args[1]);
                 Point x= Computations.findDistances(readIntensity);
-                long elapsedTime=System.currentTimeMillis()-startTime;z
+                long elapsedTime=System.currentTimeMillis()-startTime;
                 DecimalFormat df = new DecimalFormat("#0.0000000");
                 System.out.println("Odlegosci miedzy warstwami wynosza "+df.format(x.a)+" oraz "+df.format(x.b)+".");
                 System.out.println("Czas poszukiwan: "+(elapsedTime/1000)+"s.");
